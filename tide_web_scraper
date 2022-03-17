@@ -16,7 +16,7 @@ for location in locations:
     tables = pd.read_html(url)
 
     # start from third table and ignore today's since no Sunset info yet)
-    for i in range(3, len(tables)):
+    for i in range(3, len(tables), 2):
         day_table = tables[i]
         sun_table = tables[i+1]
         sunrise = sun_table[0][0][9:] #'Sunrise: 7:17AM'
