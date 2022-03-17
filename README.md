@@ -4,6 +4,6 @@
 - Pandas, lxml, and datetime
 
 ```python
-import pandas as pd # install lxml
-from datetime import datetime
+pip install pandas
+pip install lxml
 ```
